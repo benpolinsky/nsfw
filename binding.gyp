@@ -17,6 +17,7 @@
         ],
         "conditions": [
             ["OS=='win'", {
+                     'win_delay_load_hook': 'true',
                 "sources": [
                     "src/win32/Controller.cpp",
                     "src/win32/Watcher.cpp",
@@ -72,6 +73,7 @@
                 ]
             }],
             ["OS=='win'", {
+                     'win_delay_load_hook': 'true',
                 "conditions": [
                     ["target_arch=='x64'", {
                         "VCLibrarianTool": {
@@ -80,6 +82,7 @@
                           ]
                         }
                     }, {
+                             'win_delay_load_hook': 'true',
                         "VCLibrarianTool": {
                           "AdditionalOptions": [
                             "/MACHINE:x86"
