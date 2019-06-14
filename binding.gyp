@@ -1,7 +1,8 @@
 {
     "targets": [{
+        'win_delay_load_hook': 'true',
         "target_name": "nsfw",
-
+        
         "sources": [
             "src/NSFW.cpp",
             "src/Queue.cpp",
